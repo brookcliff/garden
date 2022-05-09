@@ -2,7 +2,7 @@
 
 require_once('.env.php');
 
-$dbconn = pg_connect("host=localhost dbname=".PGDATABASE." user=".PGUSER." password=".PGPASSWORD)
+$dbconn = pg_connect("host=database dbname=".PGDATABASE." user=".PGUSER." password=".PGPASSWORD)
 		or die('Could not connect: ' . pg_last_error());
 
 $action = $plant = $bed = NULL;
